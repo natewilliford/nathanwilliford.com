@@ -1,7 +1,7 @@
 <?php
 // src/Acme/UserBundle/Entity/User.php
 
-namespace Nate\UserBundle\Entity;
+namespace Nate\PortfolioBundle\Entity;
 
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -19,9 +19,13 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\OneToMany(targetEntity="PortfolioEntry", mappedBy="author")
+     */
+    protected $portfolioEntries;
+
     public function __construct()
     {
         parent::__construct();
-        // your own logic
     }
 }
