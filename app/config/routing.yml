@@ -1,0 +1,16 @@
+nate_user:
+    resource: "@NateUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+nate_user_bundle:
+    resource: "@NateUserBundle/Resources/config/routing.yml"
+
+nate_portfolio:
+    resource: "@NatePortfolioBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#    prefix:   /_internal
