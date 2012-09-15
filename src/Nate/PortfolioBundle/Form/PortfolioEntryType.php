@@ -14,8 +14,8 @@ class PortfolioEntryType extends AbstractType
             ->add('title')
             ->add('body')
             ->add('link')
-            ->add('created')
-            ->add('updated')
+//            ->add('created')
+//            ->add('updated')
             ->add('author')
         ;
     }

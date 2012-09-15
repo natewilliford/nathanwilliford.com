@@ -50,8 +50,8 @@ class PortfolioEntry
 
     public function __construct()
     {
-//        $this->setCreated(new \DateTime());
-//        $this->setUpdated(new \DateTime());
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
     }
 
     /**
@@ -59,7 +59,7 @@ class PortfolioEntry
      */
     public function setUpdatedValue()
     {
-//        $this->setUpdated(new \DateTime());
+        $this->setUpdated(new \DateTime());
     }
 
     /**

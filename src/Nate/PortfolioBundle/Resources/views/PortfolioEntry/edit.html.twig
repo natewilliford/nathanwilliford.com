@@ -1,3 +1,6 @@
+{% extends "NatePortfolioBundle::layout.html.twig" %}
+
+{% block body %}
 <h1>PortfolioEntry edit</h1>
 
 <form action="{{ path('portfolio_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(edit_form) }}>
@@ -20,3 +23,4 @@
         </form>
     </li>
 </ul>
+{% endblock %}
