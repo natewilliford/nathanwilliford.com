@@ -17,7 +17,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2012-01-02 19:32:49",
+        "time": "2012-01-02 18:32:49",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -62,7 +62,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2012-01-02 18:40:52",
+        "time": "2012-01-02 17:40:52",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -106,7 +106,7 @@
             "symfony/framework-bundle": "2.*",
             "jms/cg": "1.0.0"
         },
-        "time": "2012-01-02 18:50:26",
+        "time": "2012-01-02 17:50:26",
         "type": "symfony-bundle",
         "installation-source": "dist",
         "autoload": {
@@ -149,7 +149,7 @@
         "require": {
             "php": ">=5.3.2"
         },
-        "time": "2012-09-14 04:21:58",
+        "time": "2012-09-14 02:21:58",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -219,7 +219,7 @@
             "php": ">=5.3.2",
             "doctrine/common": "2.3.*"
         },
-        "time": "2012-09-05 15:36:29",
+        "time": "2012-09-05 13:36:29",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -281,7 +281,7 @@
         "require": {
             "php": ">=5.2.4"
         },
-        "time": "2012-09-13 11:15:32",
+        "time": "2012-09-13 09:15:32",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -374,7 +374,7 @@
             "propel/propel1": "dev-master",
             "monolog/monolog": "dev-master"
         },
-        "time": "2012-09-11 07:12:50",
+        "time": "2012-09-11 05:12:50",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -425,7 +425,7 @@
         "require": {
             "php": ">=5.2.4"
         },
-        "time": "2012-09-13 11:16:16",
+        "time": "2012-09-13 09:16:16",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -481,7 +481,7 @@
         "suggest": {
             "symfony/yaml": "If you want to use YAML Metadata Mapping Driver"
         },
-        "time": "2012-09-05 16:16:47",
+        "time": "2012-09-05 14:16:47",
         "bin": [
             "bin/doctrine",
             "bin/doctrine.php"
@@ -557,7 +557,7 @@
         "suggest": {
             "doctrine/orm": "The Doctrine ORM integration is optional in the bundle."
         },
-        "time": "2012-09-10 13:12:44",
+        "time": "2012-09-10 11:12:44",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -614,7 +614,7 @@
         "require": {
             "twig/twig": "1.*"
         },
-        "time": "2012-09-04 12:51:18",
+        "time": "2012-09-04 10:51:18",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -677,7 +677,7 @@
             "ptachoire/cssembed": "Assetic provides the integration with phpcssembed to embed data uris",
             "leafo/scssphp-compass": "Assetic provides the integration with the SCSS compass plugin"
         },
-        "time": "2012-09-14 09:29:48",
+        "time": "2012-09-14 07:29:48",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -744,7 +744,7 @@
         "suggest": {
             "symfony/twig-bundle": "2.1.*"
         },
-        "time": "2012-09-14 10:37:24",
+        "time": "2012-09-14 08:37:24",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -802,7 +802,7 @@
             "symfony/config": "2.1.*",
             "symfony/yaml": "2.1.*"
         },
-        "time": "2012-08-29 10:25:46",
+        "time": "2012-08-29 08:25:46",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -857,7 +857,7 @@
             "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
             "ext-mongo": "Allow sending log messages to a MongoDB server"
         },
-        "time": "2012-09-11 09:35:21",
+        "time": "2012-09-11 07:35:21",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -915,7 +915,7 @@
             "symfony/yaml": "2.1.*",
             "symfony/config": "2.1.*"
         },
-        "time": "2012-09-10 11:31:25",
+        "time": "2012-09-10 09:31:25",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -963,7 +963,7 @@
         "require": {
             "symfony/framework-bundle": "2.1.*"
         },
-        "time": "2012-09-11 03:10:08",
+        "time": "2012-09-11 01:10:08",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -1011,7 +1011,7 @@
             "symfony/framework-bundle": "2.1.*",
             "doctrine/common": ">=2.1,<2.4-dev"
         },
-        "time": "2012-08-29 08:02:19",
+        "time": "2012-08-29 06:02:19",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -1066,7 +1066,7 @@
         "suggest": {
             "doctrine/doctrine-bundle": "to generate entities and their crud controller"
         },
-        "time": "2012-08-28 05:16:11",
+        "time": "2012-08-28 03:16:11",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -1124,7 +1124,7 @@
             "sensio/framework-extra-bundle": "2.1.*",
             "jms/security-extra-bundle": "1.*"
         },
-        "time": "2012-09-13 23:08:27",
+        "time": "2012-09-13 21:08:27",
         "type": "symfony-bundle",
         "installation-source": "source",
         "autoload": {
@@ -1187,7 +1187,7 @@
             "symfony/form": "*",
             "symfony/validator": "*"
         },
-        "time": "2012-09-06 14:12:23",
+        "time": "2012-09-06 12:12:23",
         "type": "symfony-bundle",
         "installation-source": "source",
         "autoload": {
@@ -1250,7 +1250,7 @@
             "doctrine/doctrine-bundle": "*",
             "doctrine/mongodb-odm-bundle": "*"
         },
-        "time": "2012-09-12 01:38:39",
+        "time": "2012-09-11 23:38:39",
         "type": "symfony-bundle",
         "extra": {
             "branch-alias": {
@@ -1285,6 +1285,102 @@
         "homepage": "http://friendsofsymfony.github.com",
         "keywords": [
             "User management"
+        ]
+    },
+    {
+        "name": "imagine/Imagine",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/avalanche123/Imagine",
+            "reference": "v0.3.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/avalanche123/Imagine/zipball/v0.3.0",
+            "reference": "v0.3.0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "sami/sami": "dev-master"
+        },
+        "time": "2012-07-29 00:35:18",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Imagine": "lib/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bulat Shakirzyanov",
+                "email": "mallluhuct@gmail.com",
+                "homepage": "http://avalanche123.com"
+            }
+        ],
+        "description": "Image processing for PHP 5.3",
+        "homepage": "http://imagine.readthedocs.org/",
+        "keywords": [
+            "image manipulation",
+            "image processing",
+            "drawing",
+            "graphics"
+        ]
+    },
+    {
+        "name": "avalanche123/imagine-bundle",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Avalanche/Bundle/ImagineBundle",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/avalanche123/AvalancheImagineBundle.git",
+            "reference": "a1248483cdd532780928f0ac23f06596d198a3f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/avalanche123/AvalancheImagineBundle/zipball/a1248483cdd532780928f0ac23f06596d198a3f0",
+            "reference": "a1248483cdd532780928f0ac23f06596d198a3f0",
+            "shasum": ""
+        },
+        "require": {
+            "symfony/framework-bundle": "2.*",
+            "imagine/imagine": "dev-master"
+        },
+        "suggest": {
+            "symfony/twig-bundle": "2.*"
+        },
+        "time": "2012-08-06 21:38:33",
+        "type": "symfony-bundle",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Avalanche\\Bundle\\ImagineBundle": ""
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Bulat Shakirzyanov",
+                "email": "mallluhuct@gmail.com",
+                "homepage": "http://avalanche123.com"
+            }
+        ],
+        "description": "Image manipulation using Imagine and Twig Filters.",
+        "homepage": "https://github.com/avalanche123/AvalancheImagineBundle",
+        "keywords": [
+            "image manipulation",
+            "imagine"
         ]
     }
 ]

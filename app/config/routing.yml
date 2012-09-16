@@ -4,6 +4,10 @@
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
 #    prefix:   /_internal
 
+_imagine:
+    resource: .
+    type:     imagine
+
 nate_front_page:
     pattern:  /
     defaults: { _controller: NatePortfolioBundle:PortfolioEntry:index }
