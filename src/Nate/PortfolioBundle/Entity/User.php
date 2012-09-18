@@ -71,4 +71,27 @@ class User extends BaseUser
     {
         return $this->portfolioEntries;
     }
+
+    /**
+     * Add portfolioEntries
+     *
+     * @param Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries
+     * @return User
+     */
+    public function addPortfolioEntrie(\Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries)
+    {
+        $this->portfolioEntries[] = $portfolioEntries;
+    
+        return $this;
+    }
+
+    /**
+     * Remove portfolioEntries
+     *
+     * @param Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries
+     */
+    public function removePortfolioEntrie(\Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries)
+    {
+        $this->portfolioEntries->removeElement($portfolioEntries);
+    }
 }

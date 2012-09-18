@@ -28,4 +28,70 @@ class User extends BaseUser
     {
         parent::__construct();
     }
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Add portfolioEntries
+     *
+     * @param Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries
+     * @return User
+     */
+    public function addPortfolioEntry(\Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries)
+    {
+        $this->portfolioEntries[] = $portfolioEntries;
+    
+        return $this;
+    }
+
+    /**
+     * Remove portfolioEntries
+     *
+     * @param Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries
+     */
+    public function removePortfolioEntry(\Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries)
+    {
+        $this->portfolioEntries->removeElement($portfolioEntries);
+    }
+
+    /**
+     * Get portfolioEntries
+     *
+     * @return Doctrine\Common\Collections\Collection 
+     */
+    public function getPortfolioEntries()
+    {
+        return $this->portfolioEntries;
+    }
+
+    /**
+     * Add portfolioEntries
+     *
+     * @param Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries
+     * @return User
+     */
+    public function addPortfolioEntrie(\Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries)
+    {
+        $this->portfolioEntries[] = $portfolioEntries;
+    
+        return $this;
+    }
+
+    /**
+     * Remove portfolioEntries
+     *
+     * @param Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries
+     */
+    public function removePortfolioEntrie(\Nate\PortfolioBundle\Entity\PortfolioEntry $portfolioEntries)
+    {
+        $this->portfolioEntries->removeElement($portfolioEntries);
+    }
 }

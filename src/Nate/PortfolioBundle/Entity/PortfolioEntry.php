@@ -39,6 +39,16 @@ class PortfolioEntry
     protected $link;
 
     /**
+     * @ORM\ManyToMany(targetEntity="Image")
+     */
+    protected $images;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="TechBadge")
+     */
+    protected $techBadges;
+
+    /**
      * @ORM\Column(type="datetime")
      */
     protected $created;
@@ -208,5 +218,71 @@ class PortfolioEntry
     public function getAuthor()
     {
         return $this->author;
+    }
+
+    /**
+     * Add images
+     *
+     * @param Nate\PortfolioBundle\Entity\Image $images
+     * @return PortfolioEntry
+     */
+    public function addImage(\Nate\PortfolioBundle\Entity\Image $images)
+    {
+        $this->images[] = $images;
+    
+        return $this;
+    }
+
+    /**
+     * Remove images
+     *
+     * @param Nate\PortfolioBundle\Entity\Image $images
+     */
+    public function removeImage(\Nate\PortfolioBundle\Entity\Image $images)
+    {
+        $this->images->removeElement($images);
+    }
+
+    /**
+     * Get images
+     *
+     * @return Doctrine\Common\Collections\Collection 
+     */
+    public function getImages()
+    {
+        return $this->images;
+    }
+
+    /**
+     * Add techBadges
+     *
+     * @param Nate\PortfolioBundle\Entity\TechBadge $techBadges
+     * @return PortfolioEntry
+     */
+    public function addTechBadge(\Nate\PortfolioBundle\Entity\TechBadge $techBadges)
+    {
+        $this->techBadges[] = $techBadges;
+    
+        return $this;
+    }
+
+    /**
+     * Remove techBadges
+     *
+     * @param Nate\PortfolioBundle\Entity\TechBadge $techBadges
+     */
+    public function removeTechBadge(\Nate\PortfolioBundle\Entity\TechBadge $techBadges)
+    {
+        $this->techBadges->removeElement($techBadges);
+    }
+
+    /**
+     * Get techBadges
+     *
+     * @return Doctrine\Common\Collections\Collection 
+     */
+    public function getTechBadges()
+    {
+        return $this->techBadges;
     }
 }
