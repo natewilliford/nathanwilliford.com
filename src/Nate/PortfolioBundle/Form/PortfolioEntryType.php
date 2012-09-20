@@ -12,11 +12,13 @@ class PortfolioEntryType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('body')
-            ->add('link')
+            ->add('body', null, array('required' => false))
+            ->add('link', null, array('required' => false))
 //            ->add('created')
 //            ->add('updated')
             ->add('author')
+            ->add('images', null, array('required' => false))
+            ->add('techBadges', null, array('required' => false))
         ;
     }
 

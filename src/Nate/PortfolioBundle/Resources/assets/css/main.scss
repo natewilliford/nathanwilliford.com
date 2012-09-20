@@ -1,5 +1,134 @@
+@import "compass";
+@import "sprite-40/*.png";
 
+$orange: #ff831f;
+$orangeLight: #ff9f52;
+$green: #69bf0d;
+
+$bundlePath: "/bundles/nateportfolio";
 
 *{
-  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  //background: url($bundlePath + "/images/carbon_fibre.png") repeat;
+  background: url($bundlePath+"/images/random_grey_variations.png");
+  background-attachment: fixed;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+h1, h2 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 32px;
+  color: $green;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: $orange;
+  &:hover {
+    color: $orangeLight;
+  }
+}
+
+p {
+  margin: 5px 0;
+}
+
+.clear {
+  clear: both;
+}
+
+#content {
+
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  padding-top: 200px;
+
+  & > .col1 {
+    width: 340px;
+    float: left;
+    padding-right: 10px;
+  }
+
+  & > .col2 {
+    width: 640px;
+    float: right;
+    padding: 0 10px;
+  }
+}
+
+h1#title {
+  @include text-shadow(0 3px 3px black);
+}
+
+#header {
+  //background: url($bundlePath + "/images/header_grad.png") repeat-x;
+  height: 75px;
+}
+
+#bio {
+  position: fixed;
+  width: 330px;
+  text-align: right;
+  padding-right: 10px;
+
+  .links {
+
+    a {
+      display:block;
+      width: 40px;
+      height: 40px;
+      float: right;
+
+      &.email {
+        @include sprite-40-sprite(email);
+      }
+
+      &.linkedin {
+        @include sprite-40-sprite(linkedin);
+      }
+
+      &.twitter {
+        @include sprite-40-sprite(twitter);
+      }
+    }
+
+  }
+}
+
+.portfolio-entry-item {
+  @include box-shadow(0 0 25px rgba(0, 0, 0, .5));
+  background-color: white;
+  background-color: rgba(255, 255, 255, .9);
+  padding: 40px;
+  color: #333;
+  margin-bottom: 80px;
+
+  .images {
+    padding: 5px 0;
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .badges {
+    .badge {
+      float: left;
+      display: block;
+      margin: 15px 15px 0 0;
+    }
+  }
 }

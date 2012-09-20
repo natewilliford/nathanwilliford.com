@@ -8,9 +8,10 @@ _imagine:
     resource: .
     type:     imagine
 
-nate_front_page:
-    pattern:  /
-    defaults: { _controller: NatePortfolioBundle:PortfolioEntry:index }
+
+#home:
+#    pattern:  /
+#    defaults: { _controller: NatePortfolioBundle:Default:index }
 
 nate_portfolio:
     resource: "@NatePortfolioBundle/Controller/"

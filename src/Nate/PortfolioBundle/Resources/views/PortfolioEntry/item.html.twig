@@ -1,0 +1,21 @@
+<div class="portfolio-entry-item">
+    <h3 class="title">{{ entity.title }}</h3>
+    <div class="body">
+        {{ entity.body|raw }}
+    </div>
+    <div class="images">
+        {% for image in entity.images %}
+        <a href="/{{ image.getWebPath() }}" rel="lightbox" title="{{ image.name }}"><img src="{{ image.getWebPath() | apply_filter('portfolio') }}" /></a>
+        {% endfor %}
+    </div>
+    <div class="badges">
+        {% for badge in entity.techBadges %}
+        <a class="badge" href="{{ badge.link }}"><img src="{{ badge.getImage().getWebPath | apply_filter('badge') }}" /></a>
+        {% endfor %}
+    </div>
+    <div class="clear"></div>
+    <a style="float: right;" href="{{ path('portfolio_edit', { 'id': entity.id }) }}">
+        Edit
+    </a>
+
+</div>

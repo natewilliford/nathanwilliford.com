@@ -23,6 +23,17 @@ class TechBadge {
     public $image;
 
     /**
+     * @ORM\Column(type="string")
+     */
+    public $name;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    public $link;
+
+
+    /**
      * Get id
      *
      * @return integer 
@@ -53,5 +64,55 @@ class TechBadge {
     public function getImage()
     {
         return $this->image;
+    }
+
+    public function __toString() {
+        return $this->name;
+    }
+
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return TechBadge
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set link
+     *
+     * @param string $link
+     * @return TechBadge
+     */
+    public function setLink($link)
+    {
+        $this->link = $link;
+    
+        return $this;
+    }
+
+    /**
+     * Get link
+     *
+     * @return string 
+     */
+    public function getLink()
+    {
+        return $this->link;
     }
 }

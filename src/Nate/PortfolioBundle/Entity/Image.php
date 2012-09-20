@@ -36,7 +36,7 @@ class Image {
     public $file;
 
     /**
-     * @ORM\Column(type="text")
+     * @ORM\Column(type="text", nullable=true)
      */
     public $description;
 
@@ -179,5 +179,9 @@ class Image {
     public function getDescription()
     {
         return $this->description;
+    }
+
+    public function __toString() {
+        return $this->name;
     }
 }
