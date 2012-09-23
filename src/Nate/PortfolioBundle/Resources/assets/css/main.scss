@@ -111,12 +111,17 @@ h1#title {
 }
 
 .portfolio-entry-item {
-  @include box-shadow(0 0 25px rgba(0, 0, 0, .5));
+  @include box-shadow(0 20px 37px rgba(0, 0, 0, 0.3));
   background-color: white;
   background-color: rgba(255, 255, 255, .9);
   padding: 40px;
   color: #333;
   margin-bottom: 80px;
+
+  h3 {
+    display: inline;
+    margin-right: 10px;
+  }
 
   .images {
     padding: 5px 0;

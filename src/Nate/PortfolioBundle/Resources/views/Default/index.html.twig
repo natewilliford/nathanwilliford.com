@@ -3,7 +3,7 @@
 {% block body %}
 
 {% for entity in entities %}
-    {% include "NatePortfolioBundle:PortfolioEntry:item.html.twig" with {'entity': entity} %}
+    {% include "NatePortfolioBundle:PortfolioEntry:item.html.twig" with {'entity': entity, 'isAdmin': isAdmin} %}
 {% endfor %}
 
 {% endblock %}

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Nathan Williford's Portfolio</title>
+    <title>{% block title %}Nathan Williford's Portfolio{% endblock %}</title>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
     <link href="/bundles/nateportfolio/css/lightbox.css" rel="stylesheet" />
     {% stylesheets '@NatePortfolioBundle/Resources/assets/css/main.scss' filter='compass' %}
@@ -17,6 +17,7 @@
 
 <div id="content">
     <div class="col1">
+    {% block bio %}
     <div id="bio">
         <h1 id="title" href="/">NathanWilliford</h1>
         <div class="links">
@@ -28,10 +29,16 @@
         <div class="summary">
             I’m a developer based in Seattle focused on making UX-centric applications for mobile and the web. I work primarily with PHP and Java for the Android SDK as well as front-end web work with jQuery and Sass. I enjoy making visually beautiful and easy to use applications as well as mobile games in my free time.
         </div>
+        {#<div class="link">#}
+            {#<a href="resume.pdf">Resume</a>#}
+
+        {#</div>#}
     </div>
+    {% endblock %}
     </div>
     <div class="col2">
     {% block body %}{% endblock %}
+    {% block fos_user_content %}{% endblock %}
     </div>
 </div>
 <div id="footer">

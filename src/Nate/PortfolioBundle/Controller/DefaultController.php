@@ -24,8 +24,11 @@ class DefaultController extends Controller {
 
         $entities = $em->getRepository('NatePortfolioBundle:PortfolioEntry')->findAll();
 
+
+
         return array(
             'entities' => $entities,
+            'isAdmin' => $this->get('security.context')->isGranted('ROLE_ADMIN')
         );
     }
 }

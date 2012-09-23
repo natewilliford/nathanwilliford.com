@@ -1,6 +1,7 @@
 // Parallax scrolling
 $(window).scroll(function(e) {
-    $('body').css('backgroundPositionY', - $(this).scrollTop() / 3);
+    $('body').css('backgroundPositionY', - $(this).scrollTop() / 20);
+
 });
 
 $(document).ready(function(){
@@ -12,8 +13,7 @@ $(window).resize(function(e) {
 });
 
 function update_bottom_padding() {
-    console.log('doin it');
-    var magick = 400;
+    var magick = 440;
     var padding = $(window).height() - $('.portfolio-entry-item:last').height() - magick;
     $('#content .col2').css('paddingBottom', padding);
 }

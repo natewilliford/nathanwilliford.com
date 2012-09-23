@@ -39,5 +39,9 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: ^/portfolio, role: ROLE_ADMIN }
+        - { path: ^/image, role: ROLE_ADMIN }
+        - { path: ^/techbadge, role: ROLE_ADMIN }
+
     acl:
         connection: default

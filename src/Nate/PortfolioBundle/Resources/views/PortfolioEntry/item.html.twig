@@ -1,5 +1,5 @@
 <div class="portfolio-entry-item">
-    <h3 class="title">{{ entity.title }}</h3>
+    <h3 class="title">{{ entity.title }}</h3><a href="{{ entity.link }}" target="_blank">Visit &raquo;</a>
     <div class="body">
         {{ entity.body|raw }}
     </div>
@@ -15,8 +15,10 @@
         {% endfor %}
     </div>
     <div class="clear"></div>
+    {% if isAdmin %}
     <a style="float: right;" href="{{ path('portfolio_edit', { 'id': entity.id }) }}">
         Edit
     </a>
+    {% endif %}
 
 </div>
