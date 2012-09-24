@@ -1,0 +1,12 @@
+{% extends "NatePortfolioBundle::layout.html.twig" %}
+{% block title %}An Error Occurred: {{ status_text }}{% endblock %}
+{% block bio %}{% endblock %}
+{% block body %}
+<h1>Page Not Found</h1>
+<h2>The server returned a "{{ status_code }} {{ status_text }}".</h2>
+
+<div>
+    These aren't the droids you're looking for. Your princess<br /> is in another castle. etc. etc.
+</div>
+{% endblock %}
+

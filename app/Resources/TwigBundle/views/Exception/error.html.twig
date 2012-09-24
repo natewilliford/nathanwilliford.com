@@ -1,6 +1,6 @@
 {% extends "NatePortfolioBundle::layout.html.twig" %}
 {% block title %}An Error Occurred: {{ status_text }}{% endblock %}
-{% block bio %}
+{% block bio %}{% endblock %}
 {% block body %}
         <h1>Oops! An Error Occurred</h1>
         <h2>The server returned a "{{ status_code }} {{ status_text }}".</h2>
@@ -9,3 +9,4 @@
             Something is broken. Please try again later.
         </div>
 {% endblock %}
+

@@ -1,4 +1,14 @@
 {% extends "NatePortfolioBundle::layout.html.twig" %}
+{% block downloads %}
+<div class="downloads">
+    <h2>Documents</h2>
+    <ul>
+        <li><a href="{{ asset('bundles/nateportfolio/downloads/NathanWilliford.pdf') }}">R&eacute;sum&eacute;</a></li>
+        <li><a href="{{ asset('bundles/nateportfolio/downloads/IntroToAi.pdf') }}">Intro to AI Course Certificate</a></li>
+        <li><a href="{{ asset('bundles/nateportfolio/downloads/RoboticCar.pdf') }}">Programming a Robotic Car Course Certificate</a></li>
+    </ul>
+</div>
+{% endblock %}
 {% block bio %}
 <div id="bio">
     <h1 id="title" href="/">NathanWilliford</h1>
