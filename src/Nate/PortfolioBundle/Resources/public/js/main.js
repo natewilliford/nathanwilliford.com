@@ -2,7 +2,7 @@
 var Site = (function(){
 
     var self = this;
-    var isMobile = true;
+    var isMobile;
 
     this.isMobile = function() {
         if (isMobile == null) {
