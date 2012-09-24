@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>{% block title %}Nathan Williford's Portfolio{% endblock %}</title>
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="/bundles/nateportfolio/css/lightbox.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/nateportfolio/css/lightbox.css') }}" rel="stylesheet" />
     {% stylesheets '@NatePortfolioBundle/Resources/assets/css/main.scss' filter='compass' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
     {% endstylesheets %}
-    <script type="text/javascript" src="/js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="/js/lightbox.js"></script>
-    <script type="text/javascript" src="/bundles/nateportfolio/js/main.js"></script>
+    {% javascripts '@NatePortfolioBundle/Resources/public/js/*' %}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
 
 </head>
 <body>
@@ -18,22 +18,6 @@
 <div id="content">
     <div class="col1">
     {% block bio %}
-    <div id="bio">
-        <h1 id="title" href="/">NathanWilliford</h1>
-        <div class="links">
-            <a class="email" href="mailto:nathan.williford@gmail.com"></a>
-            <a class="twitter" href="http://twitter.com/natewilliford" target="_blank"></a>
-            <a class="linkedin" href="http://www.linkedin.com/pub/nathan-williford/10/26a/418" target="_blank"></a>
-        </div>
-        <div class="clear"></div>
-        <div class="summary">
-            I’m a developer based in Seattle focused on making UX-centric applications for mobile and the web. I work primarily with PHP and Java for the Android SDK as well as front-end web work with jQuery and Sass. I enjoy making visually beautiful and easy to use applications as well as mobile games in my free time.
-        </div>
-        {#<div class="link">#}
-            {#<a href="resume.pdf">Resume</a>#}
-
-        {#</div>#}
-    </div>
     {% endblock %}
     </div>
     <div class="col2">
@@ -43,6 +27,17 @@
 </div>
 <div id="footer">
 </div>
+{% block downlaods %}
+
+<div class="downloads">
+    <h2>Downloads</h2>
+    <ul>
+        <li><a href="{{ asset('bundles/nateportfolio/downloads/NathanWilliford.pdf') }}">R&eacute;sum&eacute;</a></li>
+        <li><a href="{{ asset('bundles/nateportfolio/downloads/IntroToAi.pdf') }}">Intro to AI Course Certificate</a></li>
+        <li><a href="{{ asset('bundles/nateportfolio/downloads/RoboticCar.pdf') }}">Programming a Robotic Car Course Certificate</a></li>
+    </ul>
+</div>
+{% endblock %}
 {% block javascripts %}{% endblock %}
 </body>
 </html>

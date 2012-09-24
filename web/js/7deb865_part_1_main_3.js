@@ -17,7 +17,7 @@ $(window).resize(function(e) {
 });
 
 function update_bottom_padding() {
-    var magick = 360;
+    var magick = 400;
     var padding = $(window).height() - $('.portfolio-entry-item:last').height() - magick;
     $('#content .col2').css('paddingBottom', padding);
 }

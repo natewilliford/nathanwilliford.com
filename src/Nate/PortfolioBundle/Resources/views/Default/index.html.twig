@@ -1,5 +1,20 @@
 {% extends "NatePortfolioBundle::layout.html.twig" %}
-
+{% block bio %}
+<div id="bio">
+    <h1 id="title" href="/">NathanWilliford</h1>
+    <div class="links">
+        <a class="github" href="https://github.com/natewilliford" target="_blank"></a>
+        <a class="stackoverflow" href="http://stackoverflow.com/users/645387/devnate" target="_blank"></a>
+        <a class="twitter" href="http://twitter.com/natewilliford" target="_blank"></a>
+        <a class="linkedin" href="http://www.linkedin.com/pub/nathan-williford/10/26a/418" target="_blank"></a>
+        <a class="email" href="mailto:nathan.williford@gmail.com"></a>
+    </div>
+    <div class="clear"></div>
+    <div class="summary">
+        I’m a developer based in Seattle focused on making UX-centric applications for mobile and the web. I work primarily with PHP and Java for the Android SDK as well as front-end web work with jQuery and Sass. I enjoy making visually beautiful and easy to use applications as well as mobile games in my free time.
+    </div>
+</div>
+{% endblock %}
 {% block body %}
 
 {% for entity in entities %}

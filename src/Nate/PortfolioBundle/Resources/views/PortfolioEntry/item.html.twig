@@ -1,5 +1,5 @@
 <div class="portfolio-entry-item">
-    <h3 class="title">{{ entity.title }}</h3><a href="{{ entity.link }}" target="_blank">Visit &raquo;</a>
+    <h3 class="title">{{ entity.title }}</h3>{% if entity.link %}<a href="{{ entity.link }}" target="_blank">Visit &raquo;</a>{% endif %}
     <div class="body">
         {{ entity.body|raw }}
     </div>
@@ -7,14 +7,15 @@
         {% for image in entity.images %}
         <a class="image" href="/{{ image.getWebPath() }}" rel="lightbox" title="{{ image.name }}"><img src="{{ image.getWebPath() | apply_filter('portfolio') }}" /></a>
         {% endfor %}
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
     <div class="badges">
         {% for badge in entity.techBadges %}
-        <a class="badge" href="{{ badge.link }}"><img src="{{ badge.getImage().getWebPath | apply_filter('badge') }}" /></a>
+        <a class="badge" href="{{ badge.link }}" target="_blank"><img src="{{ badge.getImage().getWebPath | apply_filter('badge') }}" /></a>
         {% endfor %}
+        <div class="clear"></div>
     </div>
-    <div class="clear"></div>
+
     {% if isAdmin %}
     <a style="float: right;" href="{{ path('portfolio_edit', { 'id': entity.id }) }}">
         Edit
